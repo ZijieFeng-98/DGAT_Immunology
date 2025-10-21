@@ -1,0 +1,45 @@
+# Large data files (>10MB)
+*.rds
+*.tsv
+*.gmt
+Processed_Data/**/*.rds
+Raw_Data/**/*.rds
+Raw_Data/**/*.tsv
+Archive/Data_Old/**/*.tsv
+Archive/Data_Old/**/*.txt
+Archive/Data_Old/**/*.gmt
+
+# Large GDC data files
+GDCdata/
+Scripts/GDCdata/
+
+# Raw data directories (large downloads)
+Raw_Data/CGGA_GBM/
+Raw_Data/HPA_Protein/*.tsv
+Raw_Data/HPA_Protein/*.txt
+
+# Large processed data matrices
+Processed_Data/**/*_matrix*.csv
+**/protein_matrix*.csv
+**/expression_batch_corrected.rds
+
+# R session files
+.RData
+.Rhistory
+.Rproj.user/
+
+# Temporary files
+*~
+*.tmp
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output plots (optional - uncomment if you don't want to track them)
+# *.pdf
+# *.png
+

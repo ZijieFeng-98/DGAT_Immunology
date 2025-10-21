@@ -1,0 +1,9 @@
+Metric,Value
+Raw proteins,10977
+Raw samples,110
+Proteins after missing filter,10804
+Unique patients,110
+DGAT1 detected,1
+DGAT2 detected,0
+Immune markers detected,4
+Median sample correlation,0.11

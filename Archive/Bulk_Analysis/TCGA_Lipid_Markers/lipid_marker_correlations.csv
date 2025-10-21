@@ -1,0 +1,9 @@
+Gene,Pathway,Category,Description,Rho,P,N,FDR,Significant
+DGAT1,Lipid Droplet,LD-Formation,Lipid droplet formation (target gene),0.9999987531529643,0,268,0,TRUE
+HIF1A,Hypoxia,Metabolic-Rewiring,Hypoxia-inducible factor 1-alpha,-0.28797072401357754,1.6333402180911603e-6,268,6.533360872364641e-6,TRUE
+SCAP,SREBP-Pathway,Escort-Protein,SREBP cleavage-activating protein (escort),0.2586299012810254,1.8083205860990014e-5,268,4.822188229597337e-5,TRUE
+SREBF1,SREBP-Pathway,Master-Regulator,SREBP-1 (master lipogenesis regulator),-0.2506812464739534,3.3085228521378645e-5,268,6.617045704275729e-5,TRUE
+ACACA,FA-Synthesis,Rate-Limiting,"Acetyl-CoA carboxylase (ACC, rate-limiting)",-0.22991437272662965,1.4630366238349384e-4,268,2.3408585981359015e-4,TRUE
+SCD,FA-Synthesis,Desaturation,Stearoyl-CoA desaturase 1 (MUFA production),-0.21437615528259324,4.0891564828722526e-4,268,5.45220864382967e-4,TRUE
+FASN,FA-Synthesis,De-Novo-Synthesis,Fatty acid synthase (de novo FA synthesis),0.13708002847185582,0.02481877892064215,268,0.02836431876644817,TRUE
+HMGCR,Cholesterol,Rate-Limiting,HMG-CoA reductase (cholesterol synthesis),-0.03970992704538817,0.517440209072274,268,0.517440209072274,FALSE

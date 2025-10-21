@@ -1,0 +1,11 @@
+
+=== Filtering primary tumors ===
+  before: 268  | after: 268 
+
+=== Deduplicate to one sample/patient (unbiased) ===
+  before: 268  | after: 268 
+  Collapsing duplicate HGNC symbols by mean...
+
+=== Normalize + filter genes ===
+  genes before: 23449 
+  genes after: 21072 

@@ -1,0 +1,38 @@
+Gene,CellType,ImmuneFunction,Description,DetectionRate
+CD68,Macrophage,Pan-Myeloid,Pan-macrophage/microglia marker,0.8938053097345132
+CD163,Macrophage,Immunosuppressive,"M2 macrophage, scavenger receptor",0.9823008849557522
+MRC1,Macrophage,Immunosuppressive,"CD206, mannose receptor (M2)",0.9823008849557522
+APOE,Macrophage,Immunosuppressive,"Apolipoprotein E, lipid-loaded TAMs",0.9823008849557522
+ARG1,TAM,Immunosuppressive,"Arginase-1, depletes arginine",0.9823008849557522
+TGFB1,TAM,Immunosuppressive,"TGF-beta, suppresses T cells",0.9823008849557522
+SPP1,TAM,Immunosuppressive,"Osteopontin, TAM marker",0.9823008849557522
+VEGFA,TAM,Immunosuppressive,Angiogenic factor,0.9823008849557522
+NOS2,M1-Macrophage,Pro-inflammatory,"iNOS, M1 marker",0.8053097345132744
+P2RY12,Microglia,Pan-Myeloid,Microglia-specific,0.9823008849557522
+TMEM119,Microglia,Pan-Myeloid,Microglia-specific,0.9823008849557522
+S100A8,MDSC,Immunosuppressive,M-MDSC marker,0.9823008849557522
+S100A9,MDSC,Immunosuppressive,M-MDSC marker,0.9823008849557522
+CD14,MDSC,Immunosuppressive,Monocytic MDSC,0.9823008849557522
+ARG2,MDSC,Immunosuppressive,Arginase-2,0.8938053097345132
+CD8A,CD8-T,Anti-tumor,CD8+ T cell,0.36283185840707965
+CD4,CD4-T,Anti-tumor,CD4+ T helper,0.9823008849557522
+HAVCR2,Exhausted-T,Dysfunctional,TIM-3,0.8053097345132744
+TOX,Exhausted-T,Dysfunctional,TOX TF,0.8053097345132744
+NCAM1,NK-cell,Anti-tumor,CD56,0.9823008849557522
+CD274,Checkpoint,Immunosuppressive,PD-L1,0.9823008849557522
+PDCD1LG2,Checkpoint,Immunosuppressive,PD-L2,0.5398230088495575
+CD276,Checkpoint,Immunosuppressive,B7-H3,0.9823008849557522
+CCL5,Chemokine,Anti-tumor,RANTES,0.9823008849557522
+CCL2,Chemokine,Immunosuppressive,MCP-1,0.6283185840707964
+DGAT1,Lipid-LD,Metabolic,Lipid droplet formation,0.8053097345132744
+SREBF1,Lipid-Synthesis,Metabolic,SREBP-1,0.9823008849557522
+SCAP,Lipid-Regulation,Metabolic,SREBP escort,0.9823008849557522
+ACACA,Lipid-Synthesis,Metabolic,ACC,0.9823008849557522
+FASN,Lipid-Synthesis,Metabolic,Fatty acid synthase,0.9823008849557522
+SCD,Lipid-Synthesis,Metabolic,SCD1,0.9823008849557522
+HMGCR,Lipid-Synthesis,Metabolic,HMG-CoA reductase,0.8053097345132744
+HIF1A,Hypoxia,Metabolic,HIF-1alpha,0.7168141592920354
+HLA-A,MHC-I,Anti-tumor,MHC class I,0.9823008849557522
+HLA-DRA,MHC-II,Anti-tumor,MHC class II,0.9823008849557522
+B2M,MHC-I,Anti-tumor,Beta-2-microglobulin,0.9823008849557522
+TAP1,Antigen-Process,Anti-tumor,Peptide transporter,0.9823008849557522

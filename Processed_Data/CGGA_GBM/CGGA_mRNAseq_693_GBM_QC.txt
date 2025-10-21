@@ -1,0 +1,8 @@
+CGGA mRNAseq_693 — GBM Cleanup + QC
+Patients: 237
+Events: 197 (83.1%) | Expected: 60–85% -> PASS
+Median OS (events): 0.88 years
+Status flipped: NO
+Genes kept: 23987 (low-expr min prop=0.10; protected=DGAT1,DGAT2,SOAT1)
+Dedup: Primary preference=NO; tie genes=DGAT1 → SOAT1
+Key fields present: IDH=FALSE, MGMT=FALSE, Age=TRUE, Sex=TRUE

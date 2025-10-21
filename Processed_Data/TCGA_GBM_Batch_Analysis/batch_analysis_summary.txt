@@ -1,0 +1,38 @@
+====================================================================== 
+TCGA GBM BATCH EFFECT ANALYSIS SUMMARY
+====================================================================== 
+
+Analysis date: 2025-10-02 13:35:09
+Samples: 286
+Genes: 36708
+Batches: 14
+
+Samples per batch:
+
+  2   6   8  12  14  15  16  19  26  27  28  32  41  76 
+ 14 109   1  40  31   2   7  25   7  12  16  10   5   7 
+
+Variance explained by principal components:
+  PC1: 26.75%
+  PC2: 5.70%
+  PC3: 3.86%
+  PC4: 3.45%
+  PC5: 3.10%
+
+Batch effect statistics:
+  PC1 vs batch correlation: 0.448
+  PC2 vs batch correlation: 0.182
+  PC1 batch ANOVA p-value: 4.26e-14
+  PC2 batch ANOVA p-value: 6.94e-02
+
+Available variables for analysis:
+  - purity
+  - age
+  - gender 
+
+====================================================================== 
+INTERPRETATION:
+- High PC1/PC2 vs batch correlation indicates strong batch effects
+- Low ANOVA p-values suggest significant batch effects
+- Consider batch correction if correlations > 0.3 or p-values < 0.05
+====================================================================== 

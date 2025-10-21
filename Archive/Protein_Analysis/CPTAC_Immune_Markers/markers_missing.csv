@@ -1,0 +1,32 @@
+Gene,CellType,ImmuneFunction,Description,DetectionRate
+IL10,TAM,Immunosuppressive,IL-10,NA
+IL12A,M1-Macrophage,Anti-tumor,IL-12p35,NA
+CXCL10,M1-Macrophage,Anti-tumor,IP-10,NA
+CD8B,CD8-T,Anti-tumor,CD8+ T cell,NA
+GZMA,Cytotoxic,Anti-tumor,Granzyme A,NA
+GZMB,Cytotoxic,Anti-tumor,Granzyme B,NA
+PRF1,Cytotoxic,Anti-tumor,Perforin,NA
+IFNG,Th1,Anti-tumor,IFN-gamma,NA
+CD3E,Pan-T,Anti-tumor,TCR component,NA
+PDCD1,Exhausted-T,Dysfunctional,PD-1,NA
+LAG3,Exhausted-T,Dysfunctional,LAG3,NA
+TIGIT,Exhausted-T,Dysfunctional,TIGIT,NA
+CTLA4,Exhausted-T,Dysfunctional,CTLA-4,NA
+FOXP3,Treg,Immunosuppressive,Treg master TF,NA
+IL2RA,Treg,Immunosuppressive,CD25,NA
+KLRD1,NK-cell,Anti-tumor,CD94,NA
+KLRK1,NK-cell,Anti-tumor,NKG2D,NA
+NCR1,NK-cell,Anti-tumor,NKp46,NA
+CLEC9A,DC,Anti-tumor,cDC1,NA
+BATF3,DC,Anti-tumor,cDC1 TF,NA
+CD1C,DC,Anti-tumor,cDC2,NA
+FCER1A,DC,Anti-tumor,cDC2,NA
+CD19,B-cell,Adaptive-immune,B cell,NA
+MS4A1,B-cell,Adaptive-immune,CD20,NA
+FCGR3B,Neutrophil,Context-dependent,CD16b,NA
+CSF3R,Neutrophil,Context-dependent,G-CSF receptor,NA
+IL6,Cytokine,Pro-inflammatory,IL-6,NA
+IL12B,Cytokine,Anti-tumor,IL-12p40,NA
+IL15,Cytokine,Anti-tumor,IL-15,NA
+TNF,Cytokine,Pro-inflammatory,TNF-alpha,NA
+IL4,Cytokine,Immunosuppressive,IL-4,NA

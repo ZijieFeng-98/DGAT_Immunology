@@ -1,0 +1,26 @@
+# CPTAC GBM: DGAT1 Protein Survival Analysis Summary
+
+## Sample Characteristics
+- Total samples: 182
+- Events (deaths): 137
+- Censored: 45
+- Median follow-up: 22.2 months
+
+## DGAT1 Protein Expression
+- Optimal cutoff: -0.203
+- Low DGAT1: 17 samples
+- High DGAT1: 165 samples
+
+## Survival Outcomes
+- Median survival (Low DGAT1): 21.4 months
+- Median survival (High DGAT1): 25.5 months
+- Log-rank p-value: 0.149
+
+## Cox Regression
+### Univariate Model
+- HR (High vs Low): 0.67 [0.39-1.16]
+- p-value: 0.151
+
+### Multivariate Model (adjusted for age, sex)
+- HR (High vs Low): 0.66 [0.38-1.14]
+- p-value: 0.134

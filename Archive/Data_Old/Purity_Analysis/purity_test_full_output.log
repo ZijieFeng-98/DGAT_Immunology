@@ -1,0 +1,26 @@
+
+#####################################################################
+  PURITY CONFOUNDING ANALYSIS
+  Testing if DGAT1-immune associations are purity artifacts
+#####################################################################
+
+Loading data for GBM...
+Purity estimates not found - computing using ESTIMATE...
+Computing ESTIMATE purity scores...
+  Removing 61 duplicate genes...
+[1] "Merged dataset includes 9236 genes (1176 mismatched)."
+[1] "1 gene set: StromalSignature  overlap= 135"
+[1] "2 gene set: ImmuneSignature  overlap= 139"
+  ESTIMATE scores calculated:
+    Row names: StromalScore, ImmuneScore, ESTIMATEScore
+  Calculating purity from ESTIMATEScore...
+Saved purity estimates to: /Users/zijiefeng/Desktop/Guo's lab/My_Research/DGAT_Immunology/Results/Analysis_Framework/TCGA_GBM/01_cleaned_data/tcga_gbm_purity_estimates.csv
+Preparing merged dataset...
+  Samples with all data: 0
+  Immune signatures: 18
+
+=== CRITICAL TEST: Does DGAT1 correlate with purity? ===
+Error in cor.test.default(df$dgat1[valid], df$purity_estimate[valid],  : 
+  not enough finite observations
+Calls: main ... test_purity_dgat_correlation -> cor.test -> cor.test.default
+Execution halted

@@ -1,0 +1,8 @@
+Metric,Count
+Original samples,391
+Primary tumor samples,379
+After deduplication,286
+Final samples,286
+Original genes,60660
+After filtering,40787
+Final genes,36708

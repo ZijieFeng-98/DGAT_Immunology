@@ -1,0 +1,26 @@
+CPTAC GBM Proteomics Processing Log
+Date: 2025-10-10 16:27:05
+R version: R version 4.2.3 (2023-03-15)
+
+Input Files:
+  - Proteome: /Users/zijiefeng/Desktop/Guo's lab/My_Research/DGAT_Immunology/Raw_Data/HPA_Protein/CPTAC3_Glioblastoma_Multiforme_Proteome.tmt11.tsv
+  - Mapping: /Users/zijiefeng/Desktop/Guo's lab/My_Research/DGAT_Immunology/Raw_Data/HPA_Protein/S048_CPTAC_GBM_Discovery_Cohort_TMT11_CaseID_SampleID_AliquotID_Map_Dec2019_r1.xlsx
+  - Clinical: /Users/zijiefeng/Desktop/Guo's lab/My_Research/DGAT_Immunology/Raw_Data/HPA_Protein/S048_CPTAC_GBM_Discovery_Cohort_Clinical_Data_Dec2019_r1.xlsx
+
+Processing Steps:
+  1. Loaded 10980 x 227 raw proteome data
+  2. Extracted 110 Log Ratio columns
+  3. Filtered to 110 valid samples
+  4. Deduplicated to 110 unique patients
+  5. Filtered proteins (>50% missing): 10804 retained
+
+Output Files:
+  - Protein matrix: 10804 proteins x 110 samples
+  - Clinical data: 110 samples
+  - QC plots: 5 files
+
+Key Proteins Detected:
+  - DGAT1: TRUE
+  - DGAT2: FALSE
+  - Immune markers: 4 of 5
+  - Lipid markers: 8 of 8

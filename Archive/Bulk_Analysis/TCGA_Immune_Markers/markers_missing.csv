@@ -1,0 +1,5 @@
+Gene,CellType,ImmuneFunction,Description,DetectionRate
+CD68,Macrophage,Pan-Myeloid,Pan-macrophage,NA
+IFNG,Th1,Anti-tumor,IFN-gamma,NA
+MS4A1,B-cell,Adaptive-immune,CD20,NA
+IL12B,Cytokine,Anti-tumor,IL-12p40,NA

@@ -1,0 +1,7 @@
+Metric,Count
+Original samples,693
+After filtering,693
+Final samples,693
+Original genes,23987
+After detection filter,23370
+After variance filter,21033

@@ -1,0 +1,36 @@
+====================================================================== 
+TCGA GBM BATCH CORRECTION REPORT
+====================================================================== 
+
+Analysis date: 2025-10-02 13:38:39
+Original samples: 286
+Final samples: 285
+Genes: 36708
+Batches: 13
+
+Removed singleton batches:
+  - Batch 8 (n=1)
+
+Batch effect reduction:
+  PC1-batch correlation: 0.376 → 0.144
+  PC1 variance explained: 26.7% → 22.4%
+  PC2 variance explained: 5.7% → 5.9%
+
+Model matrix preserved:
+  - Purity relationships
+  - Age relationships
+
+Files created:
+  - expression_batch_corrected.rds (main output)
+  - metadata_batch_corrected.csv (updated metadata)
+  - batch_correction_comparison.png (before/after plots)
+  - PCA_before_ComBat.png (pre-correction PCA)
+  - PCA_after_ComBat.png (post-correction PCA)
+  - batch_correction_summary.csv (statistics)
+
+====================================================================== 
+INTERPRETATION:
+✓ SUCCESS: Batch effects successfully reduced (correlation < 0.3)
+✓ Biological relationships (purity, age) preserved
+✓ Ready for downstream DGAT1 correlation analysis
+====================================================================== 

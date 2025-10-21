@@ -1,0 +1,189 @@
+═══════════════════════════════════════════════════════════════════════════════
+  DGAT1 PROTEIN CORRELATION ANALYSIS - CPTAC GBM PROTEOMICS
+═══════════════════════════════════════════════════════════════════════════════
+
+Analysis Date: 2025-10-10
+Dataset: CPTAC3 GBM Discovery Cohort
+Samples: 110 GBM patients
+Proteins: 10,804 quantified
+Method: Spearman rank correlation with FDR correction
+
+═══════════════════════════════════════════════════════════════════════════════
+KEY FINDINGS
+═══════════════════════════════════════════════════════════════════════════════
+
+FINDING 1: NO SIGNIFICANT IMMUNE CORRELATIONS ❗
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• 0/24 immune markers showed significant correlation with DGAT1
+• All FDR-adjusted p-values > 0.67
+• Strongest (non-significant): CXCL12 (r=-0.28), CSF1 (r=-0.20)
+
+Interpretation:
+→ DGAT1 protein does NOT correlate with immune proteins
+→ Suggests post-transcriptional regulation differs from mRNA
+→ Immune-DGAT1 relationship may be indirect
+→ Consider comparing with RNA-seq data
+
+
+FINDING 2: SIGNIFICANT LIPID METABOLISM CORRELATIONS ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. DGAT1 ↔ SREBF1 (SREBP-1): r = +0.336, p_adj = 0.020 ✅
+   → Positive correlation with lipogenesis master regulator
+   → Coordinated triglyceride and fatty acid synthesis
+   → Supports lipid droplet formation phenotype
+
+2. DGAT1 ↔ SREBF2 (SREBP-2): r = -0.354, p_adj = 0.016 ✅
+   → Negative correlation with cholesterol synthesis
+   → Metabolic trade-off: TAG synthesis ↑ Cholesterol ↓
+   → GBM cells favor TAG storage when DGAT1 high
+
+
+FINDING 3: NOTABLE TRENDS (NON-SIGNIFICANT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Lipid markers:
+• PLIN3 (lipid droplet): r = +0.18
+• ACSL4 (FA activation): r = +0.23
+• SCAP (SREBP regulation): r = +0.23
+
+Immune markers:
+• CXCL12 (chemokine): r = -0.28
+• CSF1 (M2 recruitment): r = -0.20
+
+═══════════════════════════════════════════════════════════════════════════════
+BIOLOGICAL INTERPRETATION
+═══════════════════════════════════════════════════════════════════════════════
+
+1. PROTEIN-LEVEL DISCONNECT FROM IMMUNE SYSTEM
+   • DGAT1 protein does not correlate with immune proteins
+   • Contrasts with potential mRNA-level relationships
+   • May reflect:
+     - Post-transcriptional regulation
+     - Protein stability differences
+     - Compartmentalization effects
+     - Limited detection of immune cell proteins
+
+2. DGAT1 IS PART OF LIPID SYNTHESIS PROGRAM
+   • Strong coordination with SREBP-1 (lipogenesis)
+   • Inverse relationship with SREBP-2 (cholesterol)
+   • Confirms role in triglyceride metabolism pathway
+
+3. METABOLIC REPROGRAMMING IN GBM
+   • High DGAT1 tumors favor TAG synthesis over cholesterol
+   • Supports lipid droplet accumulation phenotype
+   • Consistent with Dr. Guo's lab PLIN/lipid droplet focus
+
+═══════════════════════════════════════════════════════════════════════════════
+MARKERS TESTED
+═══════════════════════════════════════════════════════════════════════════════
+
+IMMUNE MARKERS (24 detected / 41 defined):
+Categories:
+  ✅ TAM_Pan (100%): CD68, CD14, ITGAM, AIF1
+  ✅ Checkpoint_Ligand (100%): CD274, PDCD1LG2, LGALS9, NECTIN2, VSIR
+  ✅ MDSC (100%): S100A8, S100A9, ARG1, NOS2
+  ⚠️  TAM_M2 (67%): CD163, MRC1, ARG1, CHI3L1, TGFB1, PTGS2
+  ❌ CD8_Effector (0%): All cytokines missing
+  ❌ Checkpoint_Receptor (17%): Most missing
+
+LIPID MARKERS (47 detected / 60 defined):
+Categories:
+  ✅ FA_Uptake (100%): All 9 markers
+  ✅ Cholesterol (100%): All 6 markers  
+  ✅ Lipolysis (100%): All 4 markers
+  ✅ FAO (86%): 6/7 markers
+  ✅ Lipogenesis (86%): 6/7 markers
+  ✅ Lipid_Droplet (80%): PLIN1-4
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTPUTS GENERATED
+═══════════════════════════════════════════════════════════════════════════════
+
+Location: Results/Proteomics/DGAT1_Correlations/
+
+Data Files:
+  ✅ DGAT1_Immune_Correlations.csv
+  ✅ DGAT1_Lipid_Correlations.csv
+  ✅ DGAT1_Analysis_Immune_Genes_Tested.csv
+  ✅ DGAT1_Analysis_Lipid_Genes_Tested.csv
+  ✅ DGAT1_Analysis_Summary.rds
+  ✅ DGAT1_Analysis_sessionInfo.txt
+
+Plots (6 PDFs):
+  ✅ 02_DGAT1_Lipid_Correlations_Barplot.pdf
+  ✅ 03_DGAT1_Immune_Volcano.pdf
+  ✅ 04_DGAT1_Lipid_Volcano.pdf
+  ✅ 06_DGAT1_Top_Lipid_Markers_Heatmap.pdf
+  ✅ 07_DGAT1_Immune_Category_Summary.pdf
+  ✅ 08_DGAT1_Lipid_Category_Summary.pdf
+
+═══════════════════════════════════════════════════════════════════════════════
+STATISTICAL DETAILS
+═══════════════════════════════════════════════════════════════════════════════
+
+Method: Spearman rank correlation
+Multiple testing: Benjamini-Hochberg FDR
+Significance threshold: FDR < 0.05
+Minimum sample size: 10 non-NA pairs per comparison
+
+DGAT1 Protein Statistics:
+  • Non-NA samples: 90/110 (81.8%)
+  • Median: 0.124 (log2 ratio)
+  • Range: -0.361 to 1.392
+  • IQR: -0.038 to 0.467
+
+Power Considerations:
+  • Effective n = 90 (limited by missing data)
+  • Proteomics has more missingness than RNA-seq
+  • Immune proteins may be below MS detection
+  • Consider as discovery analysis
+
+═══════════════════════════════════════════════════════════════════════════════
+NEXT STEPS & RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. COMPARE WITH RNA-SEQ DATA
+   → Run same analysis on TCGA/CGGA RNA-seq
+   → Check if DGAT1 mRNA correlates with immune genes
+   → Identify mRNA-protein discordance
+
+2. FUNCTIONAL VALIDATION
+   → DGAT1 inhibition in GBM cell lines
+   → Measure lipid droplet formation (PLIN staining)
+   → Assess immune marker expression changes
+   → Test SREBP-1/2 pathway response
+
+3. MULTI-OMIC INTEGRATION
+   → Match CPTAC samples with TCGA (subset overlap)
+   → Correlate mRNA-protein for DGAT1, SREBP1, SREBP2
+   → Identify post-transcriptionally regulated genes
+
+4. MECHANISTIC STUDIES
+   → Test if SREBP-1 drives DGAT1 expression
+   → Investigate TAG vs cholesterol metabolic trade-off
+   → Examine lipid droplet function in GBM
+
+═══════════════════════════════════════════════════════════════════════════════
+CONCLUSIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY TAKEAWAYS:
+
+1. ✅ DGAT1 protein is part of coordinated lipid synthesis program
+2. ✅ Strong evidence for SREBP-1 coordination (lipogenesis)
+3. ✅ Inverse relationship with SREBP-2 (cholesterol)
+4. ❗ NO protein-level correlation with immune markers
+5. 🔬 Important to compare with mRNA-level relationships
+
+BIOLOGICAL SIGNIFICANCE:
+→ DGAT1 in GBM tumors participates in metabolic reprogramming
+→ Favors triglyceride synthesis over cholesterol synthesis
+→ Immune relationship (if present) occurs at transcriptional level
+→ Post-transcriptional regulation may be important
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+

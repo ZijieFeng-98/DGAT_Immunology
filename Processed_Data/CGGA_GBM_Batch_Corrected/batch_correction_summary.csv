@@ -1,0 +1,11 @@
+"metric","value"
+"samples_before",693
+"samples_after",693
+"genes",21033
+"batches",4
+"PC1_batch_cor_before",-0.0517554219359852
+"PC1_batch_cor_after",-0.118469711925472
+"PC1_var_before",0.276669849461097
+"PC1_var_after",0.276368140020079
+"PC2_var_before",0.156277555419234
+"PC2_var_after",0.150479910908881

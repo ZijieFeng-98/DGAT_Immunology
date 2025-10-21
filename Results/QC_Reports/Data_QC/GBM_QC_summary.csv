@@ -1,0 +1,10 @@
+metric,value
+Initial samples,391
+Initial genes,59427
+Filtered genes,38987
+Final matched samples,391
+Complete survival (%),100
+Event rate (%),31.2
+Median survival (years),1.53
+N events,122
+QC passed,NO

@@ -1,0 +1,9 @@
+Gene,Pathway,Category,Description,DetectionRate
+DGAT1,Lipid Droplet,LD-Formation,Lipid droplet formation (target gene),1
+SREBF1,SREBP-Pathway,Master-Regulator,SREBP-1 (master lipogenesis regulator),1
+SCAP,SREBP-Pathway,Escort-Protein,SREBP cleavage-activating protein (escort),1
+ACACA,FA-Synthesis,Rate-Limiting,"Acetyl-CoA carboxylase (ACC, rate-limiting)",1
+FASN,FA-Synthesis,De-Novo-Synthesis,Fatty acid synthase (de novo FA synthesis),1
+SCD,FA-Synthesis,Desaturation,Stearoyl-CoA desaturase 1 (MUFA production),1
+HMGCR,Cholesterol,Rate-Limiting,HMG-CoA reductase (cholesterol synthesis),1
+HIF1A,Hypoxia,Metabolic-Rewiring,Hypoxia-inducible factor 1-alpha,1

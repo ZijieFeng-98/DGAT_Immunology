@@ -1,0 +1,39 @@
+TCGA-GBM FIXED DOWNLOAD & PREPROCESSING
+Processing date: 2025-09-30
+TCGAbiolinks version: 2.25.3
+
+FINAL COHORT:
+  Patients: 268
+  Genes: 23510
+
+SURVIVAL DATA:
+  Events: 228 (85.1%)
+  Censored: 40 (14.9%)
+  Median OS (events): 1.06 years
+  Median follow-up (censored): 0.66 years
+
+QC CHECKS:
+  Event rate: 70-85% expected | 85.1% observed | FAIL
+  Median OS: 0.8-2.0 y expected | 1.06 y observed | PASS
+
+VALIDATION GENES:
+  EGFR: p=0.0033
+  TP53: p=0.0773
+  PTEN: p=0.0219
+  IDH1: p=0.0264
+  Significant: 3 / 4
+
+DATA PROVENANCE:
+  Source: TCGA GDC Data Portal
+  Project: TCGA-GBM
+  Workflow: STAR - Counts
+  Normalization: FPKM (unstrand)
+  Gene IDs: Converted to HGNC symbols
+
+PREPROCESSING STEPS:
+  1. Downloaded via TCGAbiolinks from GDC
+  2. Converted Ensembl IDs to HGNC gene symbols
+  3. Filtered to primary solid tumors (code 01)
+  4. Deduplicated to one sample per patient
+  5. Filtered genes: protein-coding + ≥10% detection
+  6. Validated with known prognostic markers

@@ -1,0 +1,70 @@
+Gene,CellType,ImmuneFunction,Description
+CD68,Macrophage,Pan-Myeloid,Pan-macrophage/microglia marker
+CD163,Macrophage,Immunosuppressive,"M2 macrophage, scavenger receptor"
+MRC1,Macrophage,Immunosuppressive,"CD206, mannose receptor (M2)"
+APOE,Macrophage,Immunosuppressive,"Apolipoprotein E, lipid-loaded TAMs"
+ARG1,TAM,Immunosuppressive,"Arginase-1, depletes arginine, suppresses T cells"
+IL10,TAM,Immunosuppressive,Anti-inflammatory cytokine
+TGFB1,TAM,Immunosuppressive,"TGF-beta, suppresses effector T cells"
+SPP1,TAM,Immunosuppressive,"Osteopontin, TAM marker, pro-tumor"
+VEGFA,TAM,Immunosuppressive,"Angiogenic factor, immune evasion"
+NOS2,M1-Macrophage,Pro-inflammatory,"iNOS, produces NO, M1 marker"
+IL12A,M1-Macrophage,Anti-tumor,"IL-12p35, Th1 polarization"
+CXCL10,M1-Macrophage,Anti-tumor,"IP-10, T cell recruitment"
+P2RY12,Microglia,Pan-Myeloid,Microglia-specific marker
+TMEM119,Microglia,Pan-Myeloid,Microglia-specific marker
+S100A8,MDSC,Immunosuppressive,"Alarmin, M-MDSC marker"
+S100A9,MDSC,Immunosuppressive,"Alarmin, M-MDSC marker"
+CD14,MDSC,Immunosuppressive,Monocytic MDSC marker
+ARG2,MDSC,Immunosuppressive,"Arginase-2, T cell suppression"
+IDO1,MDSC,Immunosuppressive,"Tryptophan catabolism, T cell suppression"
+CD8A,CD8-T,Anti-tumor,CD8+ T cell marker
+CD8B,CD8-T,Anti-tumor,CD8+ T cell marker
+CD4,CD4-T,Anti-tumor,CD4+ T helper marker
+GZMA,Cytotoxic,Anti-tumor,"Granzyme A, kills tumor cells"
+GZMB,Cytotoxic,Anti-tumor,"Granzyme B, kills tumor cells"
+PRF1,Cytotoxic,Anti-tumor,"Perforin, pore-forming cytotoxic"
+IFNG,Th1,Anti-tumor,"IFN-gamma, Th1 effector cytokine"
+CD3E,Pan-T,Anti-tumor,T cell receptor component
+PDCD1,Exhausted-T,Dysfunctional,"PD-1, exhaustion marker"
+LAG3,Exhausted-T,Dysfunctional,"LAG3, exhaustion marker"
+HAVCR2,Exhausted-T,Dysfunctional,"TIM-3, exhaustion marker"
+TIGIT,Exhausted-T,Dysfunctional,"TIGIT, exhaustion/suppression"
+CTLA4,Exhausted-T,Dysfunctional,"CTLA-4, immune checkpoint"
+TOX,Exhausted-T,Dysfunctional,"TOX, exhaustion transcription factor"
+FOXP3,Treg,Immunosuppressive,Treg master transcription factor
+IL2RA,Treg,Immunosuppressive,"CD25, IL-2 receptor alpha"
+NCAM1,NK-cell,Anti-tumor,"CD56, NK cell marker"
+KLRD1,NK-cell,Anti-tumor,"CD94, NK receptor"
+KLRK1,NK-cell,Anti-tumor,"NKG2D, activating NK receptor"
+NCR1,NK-cell,Anti-tumor,"NKp46, NK activating receptor"
+CLEC9A,DC,Anti-tumor,"cDC1, cross-presenting DC"
+BATF3,DC,Anti-tumor,cDC1 transcription factor
+CD1C,DC,Anti-tumor,cDC2 marker
+FCER1A,DC,Anti-tumor,cDC2 marker
+CD19,B-cell,Adaptive-immune,B cell marker
+MS4A1,B-cell,Adaptive-immune,"CD20, B cell marker"
+FCGR3B,Neutrophil,Context-dependent,"CD16b, neutrophil marker"
+CSF3R,Neutrophil,Context-dependent,G-CSF receptor
+CD274,Checkpoint,Immunosuppressive,"PD-L1, checkpoint ligand"
+PDCD1LG2,Checkpoint,Immunosuppressive,"PD-L2, checkpoint ligand"
+CD276,Checkpoint,Immunosuppressive,"B7-H3, immune checkpoint"
+IL6,Cytokine,Pro-inflammatory,"IL-6, pleiotropic cytokine"
+IL12B,Cytokine,Anti-tumor,"IL-12p40, Th1 polarization"
+IL15,Cytokine,Anti-tumor,"IL-15, NK/CD8 T cell support"
+TNF,Cytokine,Pro-inflammatory,"TNF-alpha, pro-inflammatory"
+IL4,Cytokine,Immunosuppressive,"IL-4, Th2/M2 polarization"
+CCL5,Chemokine,Anti-tumor,"RANTES, T cell recruitment"
+CCL2,Chemokine,Immunosuppressive,"MCP-1, monocyte/MDSC recruitment"
+DGAT1,Lipid-LD,Metabolic,"Lipid droplet formation, TAM suppression"
+SREBF1,Lipid-Synthesis,Metabolic,"SREBP-1, master lipogenesis regulator"
+SCAP,Lipid-Regulation,Metabolic,SREBP escort protein
+ACACA,Lipid-Synthesis,Metabolic,"ACC, rate-limiting FA synthesis"
+FASN,Lipid-Synthesis,Metabolic,"Fatty acid synthase, de novo FA synthesis"
+SCD,Lipid-Synthesis,Metabolic,"SCD1, MUFA production"
+HMGCR,Lipid-Synthesis,Metabolic,"HMG-CoA reductase, cholesterol synthesis"
+HIF1A,Hypoxia,Metabolic,"HIF-1alpha, metabolic rewiring"
+HLA-A,MHC-I,Anti-tumor,"MHC class I, antigen presentation"
+HLA-DRA,MHC-II,Anti-tumor,"MHC class II, antigen presentation"
+B2M,MHC-I,Anti-tumor,"Beta-2-microglobulin, MHC-I component"
+TAP1,Antigen-Process,Anti-tumor,"Peptide transporter, antigen processing"

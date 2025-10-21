@@ -1,0 +1,22 @@
+# TCGA GBM: DGAT1 Survival Analysis Summary
+
+## Sample Characteristics
+- Total samples: 268
+- Events (deaths): 228
+- Censored: 40
+- Median follow-up: 11.9 months
+
+## DGAT1 Expression
+- Optimal cutoff: 5.29
+- Low DGAT1: 35 samples
+- High DGAT1: 233 samples
+
+## Survival Outcomes
+- Median survival (Low DGAT1): 16.6 months
+- Median survival (High DGAT1): 13.1 months
+- Log-rank p-value: 0.138
+
+## Cox Regression
+### Univariate Model
+- HR (High vs Low): 1.36 [0.91-2.03]
+- p-value: 0.139

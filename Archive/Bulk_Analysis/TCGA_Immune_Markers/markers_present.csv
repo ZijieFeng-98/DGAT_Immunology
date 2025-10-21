@@ -1,0 +1,58 @@
+Gene,CellType,ImmuneFunction,Description,DetectionRate
+CD163,Macrophage,Immunosuppressive,M2 macrophage,1
+MRC1,Macrophage,Immunosuppressive,CD206 (M2),1
+APOE,Macrophage,Immunosuppressive,Lipid-loaded TAMs,1
+ARG1,TAM,Immunosuppressive,Arginase-1,1
+IL10,TAM,Immunosuppressive,IL-10,1
+TGFB1,TAM,Immunosuppressive,TGF-beta,1
+SPP1,TAM,Immunosuppressive,Osteopontin,1
+VEGFA,TAM,Immunosuppressive,VEGF-A,1
+NOS2,M1-Macrophage,Pro-inflammatory,iNOS (M1),1
+IL12A,M1-Macrophage,Anti-tumor,IL-12p35,1
+CXCL10,M1-Macrophage,Anti-tumor,IP-10,1
+P2RY12,Microglia,Pan-Myeloid,Microglia-specific,1
+TMEM119,Microglia,Pan-Myeloid,Microglia-specific,1
+S100A8,MDSC,Immunosuppressive,M-MDSC,1
+S100A9,MDSC,Immunosuppressive,M-MDSC,1
+CD14,MDSC,Immunosuppressive,Monocytic MDSC,1
+ARG2,MDSC,Immunosuppressive,Arginase-2,1
+IDO1,MDSC,Immunosuppressive,IDO1,1
+CD8A,CD8-T,Anti-tumor,CD8+ T cell,1
+CD8B,CD8-T,Anti-tumor,CD8+ T cell,1
+CD4,CD4-T,Anti-tumor,CD4+ T helper,1
+GZMA,Cytotoxic,Anti-tumor,Granzyme A,1
+GZMB,Cytotoxic,Anti-tumor,Granzyme B,1
+PRF1,Cytotoxic,Anti-tumor,Perforin,1
+CD3E,Pan-T,Anti-tumor,TCR component,1
+PDCD1,Exhausted-T,Dysfunctional,PD-1,1
+LAG3,Exhausted-T,Dysfunctional,LAG3,1
+HAVCR2,Exhausted-T,Dysfunctional,TIM-3,1
+TIGIT,Exhausted-T,Dysfunctional,TIGIT,1
+CTLA4,Exhausted-T,Dysfunctional,CTLA-4,1
+TOX,Exhausted-T,Dysfunctional,TOX TF,1
+FOXP3,Treg,Immunosuppressive,Treg master TF,1
+IL2RA,Treg,Immunosuppressive,CD25,1
+NCAM1,NK-cell,Anti-tumor,CD56,1
+KLRD1,NK-cell,Anti-tumor,CD94,1
+KLRK1,NK-cell,Anti-tumor,NKG2D,1
+NCR1,NK-cell,Anti-tumor,NKp46,1
+CLEC9A,DC,Anti-tumor,cDC1,1
+BATF3,DC,Anti-tumor,cDC1 TF,1
+CD1C,DC,Anti-tumor,cDC2,1
+FCER1A,DC,Anti-tumor,cDC2,1
+CD19,B-cell,Adaptive-immune,B cell,1
+FCGR3B,Neutrophil,Context-dependent,CD16b,1
+CSF3R,Neutrophil,Context-dependent,G-CSF receptor,1
+CD274,Checkpoint,Immunosuppressive,PD-L1,1
+PDCD1LG2,Checkpoint,Immunosuppressive,PD-L2,1
+CD276,Checkpoint,Immunosuppressive,B7-H3,1
+IL6,Cytokine,Pro-inflammatory,IL-6,1
+IL15,Cytokine,Anti-tumor,IL-15,1
+TNF,Cytokine,Pro-inflammatory,TNF-alpha,1
+IL4,Cytokine,Immunosuppressive,IL-4,1
+CCL5,Chemokine,Anti-tumor,RANTES,1
+CCL2,Chemokine,Immunosuppressive,MCP-1,1
+HLA-A,MHC-I,Anti-tumor,MHC class I,1
+HLA-DRA,MHC-II,Anti-tumor,MHC class II,1
+B2M,MHC-I,Anti-tumor,Beta-2-microglobulin,1
+TAP1,Antigen-Process,Anti-tumor,Peptide transporter,1
