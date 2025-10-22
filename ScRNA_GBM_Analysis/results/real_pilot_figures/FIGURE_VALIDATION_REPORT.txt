@@ -1,0 +1,45 @@
+======================================================================
+PUBLICATION FIGURE VALIDATION REPORT
+======================================================================
+
+Generated: 2025-10-21 23:21:35
+Output Directory: results\real_pilot_figures
+
+[OK] VALIDATION CRITERIA MET:
+  - Resolution: 300 DPI (Nature, Cell, Science standard)
+  - Formats: PDF (vector) + PNG (raster)
+  - Color schemes: Color-blind safe (viridis)
+  - Typography: Arial/sans-serif, readable sizes
+  - Layout: Clean, despined, tight_layout
+
+[REF] LITERATURE REFERENCES:
+  Figure 1 (QC):
+    - sc-best-practices.org
+    - Luecken & Theis, 2019, Mol Syst Biol
+  Figure 2 (UMAP):
+    - Korsunsky et al., 2019, Nat Methods (Harmony)
+    - McInnes et al., 2018 (UMAP)
+  Figure 3 (DGAT1):
+    - Cheng et al., 2020, Nat Commun
+    - Bensaad et al., 2014, Cell Metab
+  Figure 4 (Composition):
+    - Klemm et al., 2020, Nature
+  Figure 5 (Diff Expression):
+    - Love et al., 2014, Genome Biol (DESeq2)
+
+[TIP] JOURNAL SUBMISSION GUIDELINES:
+  Nature family: 300-600 DPI, RGB/CMYK, PDF/TIFF
+  Cell family: 300 DPI minimum, vector preferred
+  Science family: 300 DPI, PDF or high-res TIFF
+  eLife: Vector formats (PDF/SVG) preferred
+
+[NEXT] FIGURE CHECKLIST FOR PUBLICATION:
+  [ ] All text readable at final size
+  [ ] Colors distinguishable (check grayscale)
+  [ ] Axes labeled with units
+  [ ] Statistical tests noted (if applicable)
+  [ ] Scale bars/legends included
+  [ ] Figure legends written
+  [ ] Supplementary figures prepared
+
+======================================================================
