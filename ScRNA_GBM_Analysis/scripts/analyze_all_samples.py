@@ -202,7 +202,9 @@ def batch_correction(adata, batch_key='sample'):
     
     adata.obsm['X_pca_harmony'] = harmony_out.Z_corr.T
     
-    print(f"  [OK] Harmony converged in {harmony_out.objective_harmony.shape[0]} iterations")
+    # Get number of iterations (objective_harmony is a list)
+    n_iter = len(harmony_out.objective_harmony) if hasattr(harmony_out, 'objective_harmony') else 'unknown'
+    print(f"  [OK] Harmony converged in {n_iter} iterations")
     
     return adata
 
