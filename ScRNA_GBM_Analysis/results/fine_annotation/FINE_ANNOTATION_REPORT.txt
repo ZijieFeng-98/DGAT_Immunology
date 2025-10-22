@@ -1,0 +1,73 @@
+======================================================================
+FINE-GRAINED CELL TYPE ANNOTATION REPORT
+======================================================================
+
+Based on: Neuro-Oncology multi-state immune annotation approach
+Reference: 22+ cell types with malignant and immune states
+
+Dataset: 11,630 cells, 3,000 genes
+
+[FINE] CELL TYPES IDENTIFIED: 13
+
+Detailed breakdown:
+  - Astrocyte: 6,127 cells (52.7%)
+  - CD8_effector: 1,782 cells (15.3%)
+  - CD8_naive: 1,074 cells (9.2%)
+  - MDSC: 629 cells (5.4%)
+  - Border_assoc_mac: 521 cells (4.5%)
+  - NK_cell: 483 cells (4.2%)
+  - cDC2: 440 cells (3.8%)
+  - Activated_myeloid: 152 cells (1.3%)
+  - B_cell: 118 cells (1.0%)
+  - Cycling: 118 cells (1.0%)
+  - CD4_naive: 112 cells (1.0%)
+  - Plasma_cell: 49 cells (0.4%)
+  - pDC: 25 cells (0.2%)
+
+[BROAD] CELL GROUPS:
+  - Normal_CNS: 6,127 cells (52.7%)
+  - Immune_Lymphoid: 3,618 cells (31.1%)
+  - Immune_Myeloid: 1,767 cells (15.2%)
+  - Cycling: 118 cells (1.0%)
+
+[SAMPLE] COMPOSITION BY SAMPLE:
+
+sample             tumour  normal
+fine_cell_type                   
+Activated_myeloid      90      62
+Astrocyte             735    5392
+B_cell                104      14
+Border_assoc_mac      484      37
+CD4_naive              54      58
+CD8_effector         1591     191
+CD8_naive             800     274
+Cycling               112       6
+MDSC                  433     196
+NK_cell               410      73
+Plasma_cell            48       1
+cDC2                  413      27
+pDC                    21       4
+
+[BIOLOGY] KEY FINDINGS:
+  - Total immune cells: 5,385 (46.3%)
+    * Myeloid: 1,767 (15.2%)
+    * Lymphoid: 3,618 (31.1%)
+
+[REF] LITERATURE COMPARISON:
+  - Klemm et al., 2020, Nature: Expected 10-15 populations in GBM
+  - Your analysis: 13 populations
+  - Assessment: Matches published GBM heterogeneity
+
+[REF] NEURO-ONCOLOGY METHODOLOGY:
+  - Study approach: 22 immune cell types identified
+  - Collapsed into: Myeloid, Lymphoid, Neutrophil, DC, B/Plasma
+  - Our approach: Same strategy with GBM-specific markers
+
+[TIP] RECOMMENDATIONS:
+  1. Validate annotations with marker gene expression
+  2. Check for expected cell types in tumor vs normal
+  3. Examine DGAT1 expression across fine cell types
+  4. Compare malignant state proportions
+  5. Analyze immune cell infiltration patterns
+
+======================================================================

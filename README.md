@@ -88,6 +88,31 @@ source("Scripts/06_utils/utils_signatures.R")
 Rscript Scripts/04_analysis/tcga_bulk_analysis.R
 ```
 
+## 🤖 AI Agent Integration
+
+This project includes **OpenAI Codex CLI** integration for AI-assisted development and analysis.
+
+### Launch Codex Agent
+```powershell
+# Method 1: Direct command
+codex
+
+# Method 2: Project helper script
+.\Scripts\codex_helper.ps1
+
+# Method 3: With specific prompt
+codex "review the transcriptomics pipeline"
+```
+
+### Common Codex Tasks
+- **Code Review**: `codex "review Scripts/Transcriptomics/ for best practices"`
+- **Analysis Help**: `codex "explain the TCGA_GBM survival analysis"`
+- **Documentation**: `codex "document the master pipeline workflow"`
+- **Troubleshooting**: `codex "debug the batch correction script"`
+
+📚 **Quick Reference**: See `Scripts/CODEX_QUICK_REFERENCE.md` for detailed examples  
+⚙️ **Configuration**: See `.codex_config.md` for setup and best practices
+
 ## 📊 Current Analysis Status
 
 ### ✅ Completed Analyses
