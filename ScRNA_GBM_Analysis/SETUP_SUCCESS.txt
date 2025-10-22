@@ -1,0 +1,185 @@
+================================================================
+    SETUP COMPLETE - Your Pipeline is Ready!
+================================================================
+
+Date: October 21, 2025
+Status: SUCCESS
+Python: 3.13.9
+
+================================================================
+WHAT'S INSTALLED
+================================================================
+
+[OK] Python 3.13.9 (using 'py' launcher)
+[OK] Virtual environment created at: venv\
+[OK] Core packages:
+     - numpy 2.3.4
+     - pandas 2.3.3
+     - scipy 1.16.2
+     - matplotlib 3.10.7
+     - seaborn 0.13.2
+
+[OK] Single-cell packages:
+     - scanpy 1.11.5 (main analysis)
+     - anndata 0.12.3 (data structures)
+     - harmonypy 0.0.10 (batch correction)
+     - infercnvpy 0.6.1 (CNV inference)
+     - jupyter (notebooks)
+
+[OK] Demo data created:
+     - data/raw/demo_tumour/ (300 cells, 2000 genes)
+     - data/raw/demo_normal/ (200 cells, 2000 genes)
+
+[NOTE] Scrublet (doublet detection) not installed
+       Requires C++ compiler. Optional - pipeline works without it.
+
+================================================================
+YOU'RE READY TO START!
+================================================================
+
+QUICK TEST (5 minutes):
+-----------------------
+Run this command to test the pipeline with demo data:
+
+  cd D:\DGAT_Immunology\ScRNA_GBM_Analysis
+  .\venv\Scripts\Activate.ps1
+  py scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+
+INTERACTIVE MODE (Recommended):
+-------------------------------
+Run each step manually and inspect results:
+
+  cd D:\DGAT_Immunology\ScRNA_GBM_Analysis
+  .\venv\Scripts\Activate.ps1
+  py scripts\step_by_step.py
+
+
+WHAT YOU'LL GET:
+---------------
+After running the pipeline (demo or real data):
+
+1. Processed single-cell dataset (H5AD format)
+2. Cell type annotations (Myeloid, T cells, etc.)
+3. Malignant vs normal cell classification
+4. DGAT1 expression analysis
+5. Beautiful UMAP plots
+6. Quality control plots
+7. Summary CSV files
+
+================================================================
+NEXT STEPS
+================================================================
+
+OPTION 1: Test with demo data (RIGHT NOW!)
+-------------------------------------------
+  .\venv\Scripts\Activate.ps1
+  py scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+  Expected time: ~5 minutes
+  This validates everything works!
+
+
+OPTION 2: Download real GBM data
+---------------------------------
+  See: DATA_DOWNLOAD_GUIDE.md
+  Visit: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163108
+  
+  Klemm et al., 2020 dataset
+  - 40 GBM tumours + 6 normal brains
+  - ~100,000 cells
+  - Published in Nature
+
+
+OPTION 3: Use your own data
+----------------------------
+  Place 10x Genomics formatted data in:
+  - data/raw/tumour/ (matrix.mtx.gz, features.tsv.gz, barcodes.tsv.gz)
+  - data/raw/normal/ (matrix.mtx.gz, features.tsv.gz, barcodes.tsv.gz)
+
+  Then run:
+  py scripts\step_by_step.py
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+"python not found" or "py not found"
+  --> Use full path: C:\Users\YourName\AppData\Local\Programs\Python\Python313\python.exe
+
+"Module not found"
+  --> Make sure virtual environment is activated:
+      .\venv\Scripts\Activate.ps1
+
+Pipeline runs but slow
+  --> Normal! CNV inference takes 10-15 minutes
+  --> Use checkpoints to resume if interrupted
+
+Want to install scrublet (optional)
+  --> Install Visual Studio Build Tools:
+      https://visualstudio.microsoft.com/visual-cpp-build-tools/
+  --> Then: pip install scrublet
+
+================================================================
+DOCUMENTATION
+================================================================
+
+START_HERE.txt            - Quick overview
+GET_STARTED.md            - Detailed walkthrough
+README.md                 - Complete documentation
+DATA_DOWNLOAD_GUIDE.md    - How to get real data
+config.yaml               - All parameters (customize!)
+
+================================================================
+YOUR ENVIRONMENT
+================================================================
+
+Project: D:\DGAT_Immunology\ScRNA_GBM_Analysis
+Python: py (launcher) --> Python 3.13.9
+Virtual env: .\venv\Scripts\Activate.ps1
+Packages: 100+ installed (see requirements.txt)
+
+To reactivate later:
+  cd D:\DGAT_Immunology\ScRNA_GBM_Analysis
+  .\venv\Scripts\Activate.ps1
+
+================================================================
+READY TO TEST NOW!
+================================================================
+
+Copy and paste this command:
+
+cd D:\DGAT_Immunology\ScRNA_GBM_Analysis
+.\venv\Scripts\Activate.ps1
+py scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+This will run the complete 8-step pipeline on demo data!
+
+Expected output:
+- Step 1: Load data (1 min)
+- Step 2: Quality control (1 min)
+- Step 3: Doublet detection (SKIPPED - scrublet not installed)
+- Step 4: Normalization & Harmony (2 min)
+- Step 5: Clustering (1 min)
+- Step 6: CNV inference (MAY FAIL - optional)
+- Step 7: Cell annotation (1 min)
+- Step 8: DGAT1 analysis (1 min)
+
+Total: ~5-10 minutes
+
+Results will be in: results\demo\
+
+================================================================
+NEED HELP?
+================================================================
+
+- Check documentation files
+- Review error messages carefully
+- Ensure virtual environment is activated
+- Try with demo data first
+- Check that all paths are correct
+
+================================================================
+SUCCESS! You're all set to start analyzing single-cell data!
+================================================================
+

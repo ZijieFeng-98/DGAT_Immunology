@@ -1,0 +1,186 @@
+# Configuration file for Single-Cell GBM Analysis Pipeline
+# Edit these parameters to customize your analysis
+
+# Data paths
+data:
+  tumour_path: "data/raw/tumour/"
+  normal_path: "data/raw/normal/"
+  output_dir: "results/"
+
+# Quality control parameters
+qc:
+  min_genes: 200          # Minimum genes per cell
+  max_genes: 2500         # Maximum genes per cell (doublet threshold)
+  min_counts: 300         # Minimum UMI counts per cell
+  max_counts: 15000       # Maximum UMI counts per cell
+  max_mito: 10.0          # Maximum mitochondrial percentage (%)
+
+# Doublet detection
+doublets:
+  expected_rate: 0.05     # Expected doublet rate (5% typical for 10x)
+  
+# Normalization
+normalization:
+  target_sum: 10000       # Target sum for normalization
+  n_top_genes: 3000       # Number of highly variable genes
+
+# Dimensionality reduction
+dimensionality:
+  n_pcs: 50               # Number of principal components
+  n_neighbors: 15         # Number of neighbors for graph
+  
+# Batch correction
+batch_correction:
+  method: "harmony"       # Method: harmony, scanorama, bbknn, combat
+  batch_key: "sample"     # Column in .obs for batch
+  
+# Clustering
+clustering:
+  algorithm: "leiden"     # leiden or louvain
+  resolution: 0.5         # Clustering resolution (0.1-2.0)
+
+# CNV inference
+cnv:
+  reference_category: "normal"  # Sample category for reference
+  window_size: 100              # Window size for CNV smoothing
+  cnv_threshold_percentile: 95  # Percentile for malignancy threshold
+
+# Cell-type markers
+markers:
+  Myeloid:
+    - PTPRC
+    - CSF1R
+    - ITGAM
+    - CD68
+    - CD163
+  
+  Microglia:
+    - P2RY12
+    - TMEM119
+    - CX3CR1
+    
+  TAM:  # Tumor-associated macrophages
+    - CD163
+    - MRC1
+    - CD68
+    - MSR1
+    
+  T_cell:
+    - CD3D
+    - CD3E
+    - TRAC
+    - CD8A
+    - CD4
+    
+  CD8_T:
+    - CD8A
+    - CD8B
+    
+  CD4_T:
+    - CD4
+    - IL7R
+    
+  Treg:
+    - FOXP3
+    - IL2RA
+    - CTLA4
+    
+  NK_cell:
+    - NCAM1
+    - NKG7
+    - GNLY
+    
+  Astrocyte:
+    - AQP4
+    - GFAP
+    - SLC1A2
+    - SLC1A3
+    
+  Oligodendrocyte:
+    - MOG
+    - MBP
+    - PLP1
+    - MOBP
+    
+  OPC:  # Oligodendrocyte precursor cells
+    - PDGFRA
+    - CSPG4
+    - SOX10
+    
+  Endothelial:
+    - PECAM1
+    - VWF
+    - CDH5
+    - FLT1
+    
+  Pericyte:
+    - RGS5
+    - PDGFRB
+    - ACTA2
+    
+  Neuron:
+    - RBFOX3
+    - SYT1
+    - SNAP25
+    - NEFL
+
+# Genes of interest
+genes_of_interest:
+  lipid_metabolism:
+    - DGAT1
+    - DGAT2
+    - FASN
+    - ACLY
+    - ELOVL2
+    - ELOVL5
+    - SCD
+    - ACACA
+    - ACACB
+    - FABP4
+    - FABP5
+    - FABP7
+    - CD36
+    - LPL
+    - APOE
+    
+  immune_checkpoint:
+    - PDCD1       # PD-1
+    - CD274       # PD-L1
+    - CTLA4
+    - LAG3
+    - HAVCR2     # TIM-3
+    - TIGIT
+    
+  exhaustion_markers:
+    - TOX
+    - TCF7
+    - PDCD1
+    - HAVCR2
+    - LAG3
+    
+  cytotoxicity:
+    - PRF1
+    - GZMA
+    - GZMB
+    - IFNG
+    - TNF
+
+# Plotting parameters
+plotting:
+  dpi: 300
+  figure_format: "png"
+  color_palette: "tab20"
+  umap_point_size: 1.0
+
+# Computational resources
+compute:
+  n_jobs: -1              # Number of parallel jobs (-1 = all cores)
+  random_seed: 42         # Random seed for reproducibility
+  
+# Output options
+output:
+  save_raw: true          # Save raw counts in .layers
+  save_normalized: true   # Save normalized counts
+  save_checkpoints: true  # Save intermediate checkpoints
+  compress: true          # Compress output files
+

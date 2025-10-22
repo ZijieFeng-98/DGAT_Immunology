@@ -1,0 +1,81 @@
+========================================
+ScRNA-seq GBM Analysis - Quick Install
+========================================
+
+STEP 1: Install Python (if not installed)
+-----------------------------------------
+Download from: https://www.python.org/downloads/
+Get: Python 3.10 (recommended)
+✓ CHECK "Add Python to PATH" during install!
+
+
+STEP 2: Run Automated Setup
+---------------------------
+Open PowerShell in this directory and run:
+
+    .\setup_complete.ps1
+
+This will:
+  - Create virtual environment
+  - Install all packages (~15 minutes)
+  - Generate demo test data
+  - Verify installation
+
+
+STEP 3: Test with Demo Data
+---------------------------
+After setup completes:
+
+    python scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+This runs the complete pipeline on synthetic data (~5-10 minutes)
+
+
+STEP 4: Download Real Data (Optional)
+-------------------------------------
+See: DATA_DOWNLOAD_GUIDE.md
+
+Visit: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163108
+Download Klemm et al. GBM dataset
+Extract to: data\raw\tumour\ and data\raw\normal\
+
+
+STEP 5: Run Full Analysis
+-------------------------
+Interactive mode (recommended):
+    python scripts\step_by_step.py
+
+Or automatic:
+    python scripts\sc_pipeline.py --tumour_path data\raw\tumour\ --normal_path data\raw\normal\ --output_dir results\
+
+
+TROUBLESHOOTING
+--------------
+"Python not found"
+  → Reinstall Python with "Add to PATH" checked
+  → Restart terminal after installation
+
+"pip not found"
+  → Run: python -m ensurepip --upgrade
+
+"Permission denied" on PowerShell scripts
+  → Run PowerShell as Administrator
+  → Or: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+Installation fails
+  → Check internet connection
+  → Try: pip install -r requirements.txt
+  → See: SETUP_COMPLETE.md for detailed guide
+
+
+QUICK LINKS
+----------
+- Full setup guide: SETUP_COMPLETE.md
+- Data download: DATA_DOWNLOAD_GUIDE.md
+- Getting started: GET_STARTED.md
+- Documentation: README.md
+
+========================================
+Ready? Run: .\setup_complete.ps1
+========================================
+

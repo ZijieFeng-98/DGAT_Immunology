@@ -1,0 +1,150 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║     Single-Cell GBM Analysis - Automated Setup               ║
+║     ============================================              ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+📋 QUICK START (NO INTERACTION NEEDED!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  Install Python (ONE TIME ONLY)
+   → Download: https://www.python.org/downloads/
+   → Get: Python 3.10.x
+   → ✓ CHECK "Add Python to PATH" when installing!
+   → Install and restart your terminal
+
+
+2️⃣  Run ONE Command (Does Everything!)
+   
+   Open PowerShell in this folder and run:
+   
+   .\setup_complete.ps1
+   
+   This will automatically:
+   ✓ Create Python environment
+   ✓ Install all packages (~15 min)
+   ✓ Generate demo test data
+   ✓ Verify everything works
+   ✓ Show you next steps
+
+
+3️⃣  Test It Works (5 minutes)
+   
+   After setup completes, test with demo data:
+   
+   python scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+
+4️⃣  Run Real Analysis
+   
+   Download real data (see DATA_DOWNLOAD_GUIDE.md)
+   Then run interactive mode:
+   
+   python scripts\step_by_step.py
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+📚 DETAILED GUIDES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INSTALL.txt                    → Quick install instructions
+SETUP_COMPLETE.md              → Complete setup guide
+DATA_DOWNLOAD_GUIDE.md         → How to get real GBM data
+GET_STARTED.md                 → First-time user walkthrough
+README.md                      → Full documentation
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ MINIMUM REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Python 3.8 or higher
+✓ 6 GB free disk space
+✓ 8 GB RAM (16 GB recommended)
+✓ Windows 10/11
+✓ Internet connection for setup
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⏱️  TIME ESTIMATES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Python installation:           5 minutes
+Automated setup:                15-20 minutes
+Demo data test:                 5 minutes
+Real data download:             10-30 minutes (internet speed)
+Real data analysis:             30-45 minutes
+
+TOTAL FIRST TIME:              ~60-90 minutes
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🎯 WHAT YOU'LL GET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Single-cell RNA-seq analysis of GBM tumours vs normal brain
+✓ Quality control with outlier detection
+✓ Batch correction with Harmony (best method)
+✓ Cell type identification (T cells, macrophages, etc.)
+✓ Malignant cell detection via CNV inference
+✓ DGAT1 and lipid metabolism gene expression analysis
+✓ Beautiful UMAP plots and visualizations
+✓ Publication-quality results
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🐛 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "Python not found"
+Solution: Reinstall with "Add to PATH" checked, restart terminal
+
+Problem: "Permission denied" on PowerShell
+Solution: Run as Administrator or:
+         Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+Problem: Setup fails
+Solution: Run manually:
+         pip install -r requirements.txt
+
+Problem: Need help
+Solution: Read SETUP_COMPLETE.md for detailed guide
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+✨ READY TO START?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Install Python from https://www.python.org/downloads/
+2. Open PowerShell in this directory
+3. Run: .\setup_complete.ps1
+4. Wait for setup to complete
+5. Test with: python scripts\sc_pipeline.py --tumour_path data\raw\demo_tumour\ --normal_path data\raw\demo_normal\ --output_dir results\demo\ --max_genes 5000
+
+That's it! Everything else is automated! 🚀
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Project: DGAT_Immunology / ScRNA_GBM_Analysis
+Location: D:\DGAT_Immunology\ScRNA_GBM_Analysis
+Created: October 21, 2025
+Status: Ready for Setup
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+

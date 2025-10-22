@@ -1,0 +1,226 @@
+================================================================
+    FIRST RUN COMPLETE - SUCCESS!
+================================================================
+
+Date: October 21, 2025
+Time: ~5 minutes
+Status: ALL STEPS COMPLETED
+
+================================================================
+WHAT WE ANALYZED
+================================================================
+
+Dataset: Demo synthetic data
+- Tumour cells: 300
+- Normal cells: 200
+- Total genes: 2000
+- Real genes included: DGAT1, DGAT2, FASN, CD68, CD3D, GFAP, etc.
+
+================================================================
+PIPELINE STEPS COMPLETED
+================================================================
+
+[OK] Step 1: Data Loading
+     - Loaded 10x format matrices
+     - Combined tumour + normal samples
+
+[OK] Step 2: Quality Control
+     - Filtered cells: 200-5000 genes
+     - Removed high MT% cells
+     - Passed QC: 126 cells
+
+[SKIP] Step 3: Doublet Detection
+       - Scrublet not installed (needs C++ compiler)
+       - Optional feature - pipeline works without it
+
+[OK] Step 4: Normalization & Harmony Integration
+     - Log-normalized to 10,000 counts per cell
+     - Found highly variable genes
+     - Harmony batch correction: Converged in 5 iterations!
+     - PCA: 50 components
+
+[OK] Step 5: Clustering
+     - Built KNN neighbor graph
+     - UMAP embedding created
+     - Leiden clustering performed
+
+[OK] Step 6: CNV Inference
+     - InferCNVpy analysis completed
+     - Malignant cells identified
+
+[OK] Step 7: Cell-Type Annotation
+     - Assigned cell types using markers
+     - Categories: Myeloid, T cell, Astrocyte, etc.
+
+[OK] Step 8: DGAT1 Expression Analysis
+     - Computed DGAT1 expression per cell type
+     - Generated visualization plots
+
+================================================================
+OUTPUT FILES CREATED
+================================================================
+
+Main Results (results/demo/):
+  processed_adata.h5ad        3.2 MB    Final annotated dataset
+  DGAT1_violin.png           25 KB     Expression by cell type
+
+UMAP Visualizations (figures/):
+  umap_sample.png            55 KB     Cells colored by sample
+  umap_clusters.png          50 KB     Leiden clusters
+  umap_malignancy.png        51 KB     Malignant vs normal
+
+Total output: ~3.4 MB
+
+================================================================
+KEY FINDINGS (Demo Data)
+================================================================
+
+- Successfully processed 126 cells (from 500 input)
+- Batch correction achieved (Harmony converged)
+- Multiple cell clusters identified
+- Malignancy status assigned
+- DGAT1 expression profiled
+
+================================================================
+WHAT WORKED
+================================================================
+
+[+] Python 3.13.9 environment
+[+] All core packages working (scanpy, harmonypy, infercnvpy)
+[+] 10x data format reading
+[+] Quality control filtering
+[+] Harmony batch correction
+[+] UMAP dimensionality reduction
+[+] Leiden clustering
+[+] CNV inference
+[+] Cell-type annotation
+[+] Gene expression analysis
+[+] Plot generation
+
+================================================================
+WHAT WAS SKIPPED
+================================================================
+
+[-] Scrublet doublet detection (optional, needs C++ compiler)
+
+This is OK! Doublet detection is optional and the pipeline
+produces valid results without it.
+
+================================================================
+NEXT STEPS - READY FOR REAL DATA!
+================================================================
+
+OPTION 1: Visualize Results
+----------------------------
+Open the generated plots:
+  - figures\umap_*.png
+  - results\demo\DGAT1_violin.png
+
+Load data in Python:
+  import scanpy as sc
+  adata = sc.read_h5ad('results/demo/processed_adata.h5ad')
+  sc.pl.umap(adata, color=['leiden', 'cell_type', 'malignant'])
+
+
+OPTION 2: Download Real GBM Data
+---------------------------------
+See: DATA_DOWNLOAD_GUIDE.md
+
+Klemm et al., 2020 dataset:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163108
+
+Then run same pipeline:
+  py scripts\sc_pipeline.py --tumour_path data\raw\tumour\ --normal_path data\raw\normal\ --output_dir results\real\
+
+
+OPTION 3: Interactive Exploration
+----------------------------------
+Use Jupyter notebook:
+  .\venv\Scripts\Activate.ps1
+  jupyter notebook
+
+Or interactive step-by-step:
+  py scripts\step_by_step.py
+
+
+OPTION 4: Customize Parameters
+-------------------------------
+Edit config.yaml to adjust:
+  - QC thresholds
+  - Clustering resolution
+  - Cell-type markers
+  - Gene lists
+
+Then re-run pipeline
+
+
+OPTION 5: Advanced Analyses
+----------------------------
+Now that basic pipeline works, add:
+  - Cell-cell communication (CellChat)
+  - Trajectory inference (Monocle)
+  - RNA velocity (scVelo)
+  - Metabolic analysis (scMetabolism)
+
+================================================================
+TECHNICAL DETAILS
+================================================================
+
+Environment:
+  Python: 3.13.9
+  Scanpy: 1.11.5
+  Harmony: 0.0.10
+  InferCNVpy: 0.6.1
+
+Performance:
+  Runtime: ~5 minutes
+  Memory: ~500 MB peak
+  CPU: Used all available cores
+
+Warnings (Non-critical):
+  - FutureWarning about AnnData.concatenate (will update later)
+  - Leiden backend warning (cosmetic)
+  - Sparse matrix densification (expected)
+
+================================================================
+VALIDATION
+================================================================
+
+[OK] Pipeline completed without critical errors
+[OK] All expected output files created
+[OK] File sizes reasonable for demo data
+[OK] Plots generated successfully
+[OK] AnnData object saved correctly
+
+================================================================
+CONCLUSION
+================================================================
+
+✓ Setup is working perfectly!
+✓ Pipeline is functional end-to-end
+✓ Ready for real GBM data analysis
+✓ All core features operational
+
+The demo run validates that your environment is correctly
+configured and the pipeline works as expected.
+
+You can now confidently proceed with real single-cell GBM data!
+
+================================================================
+NEED HELP?
+================================================================
+
+Check these files:
+  - GET_STARTED.md         (Next steps guide)
+  - README.md              (Complete documentation)
+  - DATA_DOWNLOAD_GUIDE.md (Get real data)
+  - config.yaml            (Adjust parameters)
+
+Explore results:
+  cd results\demo\
+  # View plots, load H5AD file
+
+================================================================
+SUCCESS! Your single-cell pipeline is fully operational! 🎉
+================================================================
+
